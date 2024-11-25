@@ -296,4 +296,32 @@ export const doctors = [
             line2: 'Tataouine'
         }
     },
+  
 ]
+  
+export const patients = [
+    {   
+        id: 1,
+
+        name: "John Smith", 
+        age: 30, 
+        email: "john.smith@example.com", 
+        photo: "/john.jpg" 
+    },
+    { 
+        id: 2,
+
+        name: "Emma Brown", 
+        age: 25, 
+        email: "emma.brown@example.com", 
+        photo: "/emma.jpeg" 
+    },
+    { 
+        id: 3,
+
+        name: "Michael White", 
+        age: 40, 
+        email: "michael.white@example.com", 
+        photo: "/michel.jpeg" 
+    }
+];

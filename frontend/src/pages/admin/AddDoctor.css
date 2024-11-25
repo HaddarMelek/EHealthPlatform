@@ -1,0 +1,216 @@
+.admin-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: 100%;
+    margin-left: 250px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.doctor-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin-right: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-form label {
+    font-size: 16px;
+    color: #555;
+    display: block; /* Assurer que les labels prennent toute la largeur disponible */
+    margin-bottom: 8px; /* Espacement sous chaque label */
+}
+
+.doctor-form input[type="text"],
+.doctor-form input[type="email"],
+.doctor-form input[type="tel"],
+.doctor-form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px; /* Optionnel : pour limiter la largeur des champs */
+    margin-bottom: 15px; /* Espacement sous chaque champ */
+}
+
+.doctor-form input[type="file"] {
+    padding: 5px;
+    background-color: #f7f7f7;
+}
+
+.doctor-form input[type="text"]:focus,
+.doctor-form input[type="email"]:focus,
+.doctor-form input[type="tel"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.image-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.submit-button {
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.submit-button:active {
+    background-color: #003f7f;
+}
+
+footer {
+    margin-top: auto;
+}
+.admin-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: 100%;
+    margin-left: 250px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.doctor-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin-right: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-form label {
+    font-size: 16px;
+    color: #555;
+    display: block; /* Assurer que les labels prennent toute la largeur disponible */
+    margin-bottom: 8px; /* Espacement sous chaque label */
+}
+
+.doctor-form input[type="text"],
+.doctor-form input[type="email"],
+.doctor-form input[type="tel"],
+.doctor-form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px; /* Optionnel : pour limiter la largeur des champs */
+    margin-bottom: 15px; /* Espacement sous chaque champ */
+}
+
+.doctor-form input[type="file"] {
+    padding: 5px;
+    background-color: #f7f7f7;
+}
+
+.doctor-form input[type="text"]:focus,
+.doctor-form input[type="email"]:focus,
+.doctor-form input[type="tel"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.image-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.submit-button {
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.submit-button:active {
+    background-color: #003f7f;
+}
+
+footer {
+    margin-top: auto;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaHome, FaUserMd, FaCalendarAlt, FaUser, FaPlus, FaBars } from "react-icons/fa";
+import { FaHome, FaUserMd, FaCalendarAlt, FaUser, FaWallet, FaChartLine, FaBars } from "react-icons/fa";
 
 const Sidebar = () => {
 
@@ -14,13 +14,12 @@ const Sidebar = () => {
   };
 
   return (
-    
+
     <div className="flex">
       {/* Sidebar */}
       <aside
-        className={`h-screen ${
-          isSidebarOpen ? "w-64" : "w-16"
-        } bg-blue-50 shadow-md fixed top-0 left-0 transition-all duration-300`}
+        className={`h-screen ${isSidebarOpen ? "w-64" : "w-16"
+          } bg-blue-50 shadow-md fixed top-0 left-0 transition-all duration-300`}
       >
         {/* Logo et bouton */}
         <div className="p-4 flex items-center justify-between border-b border-gray-200">
@@ -41,24 +40,33 @@ const Sidebar = () => {
         {/* Navigation */}
         <nav className="mt-6">
           <ul className="space-y-2">
-          <li>
-  <a
-    className={`flex items-center px-4 py-3 text-blue-700 hover:bg-blue-100 transition-colors rounded-md ${
-      !isSidebarOpen ? "justify-center" : ""
-    }`}
-    onClick={toggleSidebar} // Utilisation du toggleSidebar ici
-  >
-    <FaHome className="text-lg" />
-    {isSidebarOpen && <span className="font-medium ml-3">Tableau de bord</span>}
-  </a>
-</li>
+            <li>
+              <a
+                className={`flex items-center px-4 py-3 text-blue-700 hover:bg-blue-100 transition-colors rounded-md ${!isSidebarOpen ? "justify-center" : ""
+                  }`}
+                onClick={toggleSidebar}
+              >
+                <FaHome className="text-lg" />
+                {isSidebarOpen && <span className="font-medium ml-3">Tableau de bord</span>}
+              </a>
+            </li>
+            <li>
+              <a
+                href="/admin/doctors"
+                className={`flex items-center px-4 py-3 text-gray-700 hover:bg-blue-100 transition-colors rounded-md ${!isSidebarOpen ? "justify-center" : ""
+                  }`}
+              >
+                <FaUserMd className="text-lg" />
+                {isSidebarOpen && <span className="font-medium ml-3">Liste des médecins</span>}
+              </a>
+            </li>
+
 
             <li>
               <a
                 href="/admin/appointments"
-                className={`flex items-center px-4 py-3 text-gray-700 hover:bg-blue-100 transition-colors rounded-md ${
-                  !isSidebarOpen ? "justify-center" : ""
-                }`}
+                className={`flex items-center px-4 py-3 text-gray-700 hover:bg-blue-100 transition-colors rounded-md ${!isSidebarOpen ? "justify-center" : ""
+                  }`}
               >
                 <FaCalendarAlt className="text-lg" />
                 {isSidebarOpen && <span className="font-medium ml-3">Rendez-vous</span>}
@@ -66,42 +74,39 @@ const Sidebar = () => {
             </li>
             <li>
               <a
-                href="/admin/add-doctor"
-                className={`flex items-center px-4 py-3 text-gray-700 hover:bg-blue-100 transition-colors rounded-md ${
-                  !isSidebarOpen ? "justify-center" : ""
-                }`}
-              >
-                <FaPlus className="text-lg" />
-                {isSidebarOpen && <span className="font-medium ml-3">Ajouter un médecin</span>}
-              </a>
-            </li>
-            <li>
-              <a
-                href="/admin/doctors"
-                className={`flex items-center px-4 py-3 text-gray-700 hover:bg-blue-100 transition-colors rounded-md ${
-                  !isSidebarOpen ? "justify-center" : ""
-                }`}
-              >
-                <FaUserMd className="text-lg" />
-                {isSidebarOpen && <span className="font-medium ml-3">Liste des médecins</span>}
-              </a>
-            </li>
-            <li>
-              <a
-                href="/admin/patients"
-                className={`flex items-center px-4 py-3 text-gray-700 hover:bg-blue-100 transition-colors rounded-md ${
-                  !isSidebarOpen ? "justify-center" : ""
-                }`}
+                href="/admin/PatientsList"
+                className={`flex items-center px-4 py-3 text-gray-700 hover:bg-blue-100 transition-colors rounded-md ${!isSidebarOpen ? "justify-center" : ""
+                  }`}
               >
                 <FaUser className="text-lg" />
-                {isSidebarOpen && <span className="font-medium ml-3">Patients</span>}
+                {isSidebarOpen && <span className="font-medium ml-3">Liste des patients</span>}
               </a>
             </li>
+            <li>
+              <a
+                href="/admin/revenues"
+                className={`flex items-center px-4 py-3 text-gray-700 hover:bg-blue-100 transition-colors rounded-md ${!isSidebarOpen ? "justify-center" : ""
+                  }`}
+              >
+                <FaWallet className="text-lg" />
+                {isSidebarOpen && <span className="font-medium ml-3">Consulter les revenus</span>}
+              </a>
+            </li>
+            <li>
+              <a
+                href="/admin/analytics"
+                className={`flex items-center px-4 py-3 text-gray-700 hover:bg-blue-100 transition-colors rounded-md ${!isSidebarOpen ? "justify-center" : ""
+                  }`}
+              >
+                <FaChartLine className="text-lg" />
+                {isSidebarOpen && <span className="font-medium ml-3">Analyse des activités</span>}
+              </a>
+            </li>
+
           </ul>
         </nav>
       </aside>
 
-      {/* Bouton d'ouverture si le sidebar est fermé */}
       {!isSidebarOpen && (
         <button
           onClick={toggleSidebar}

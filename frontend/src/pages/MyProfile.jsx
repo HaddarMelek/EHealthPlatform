@@ -2,6 +2,7 @@ import { useState } from "react";
 import { assets } from "../assets/assets";
 
 export const MyProfile = () => {
+
   const [userData, setUserData] = useState({
     name: "Khaled Toumi",
     image: assets.profile_pic,
@@ -18,6 +19,7 @@ export const MyProfile = () => {
   const [isEdit, setIsEdit] = useState(true);
 
   return (
+
     <div className="px-4 sm:px-6 md:px-10">
       <img className="w-36 rounded" src={userData.image} alt="" />
 
