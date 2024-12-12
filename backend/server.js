@@ -4,6 +4,9 @@ import dotenv from 'dotenv';
 import { dbConnect } from './config/mongodb.js'; // Ajoutez ".js" à l'import
 import connectCloudinary from './config/cloudinary.js';
 import adminRouter from './routes/adminRoutes.js';
+import doctorRoutes from './routes/doctorRoutes.js';
+
+
 // Configuration de l'application
 dotenv.config();
 
@@ -25,9 +28,7 @@ app.use(cors());
 // api endpoints
 
 app.use('/api/admin',adminRouter)
-
-// localhost:4000/api/admin 
-
+app.use('/api/doctors', doctorRoutes);
 
 // Endpoints de l'application
 app.get('/', (req, res) => {

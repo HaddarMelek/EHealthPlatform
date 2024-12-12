@@ -104,7 +104,7 @@ export const doctors = [
         _id: 'doc2',
         name: 'Dr. Malek Haddar',
         image: doc2,
-        speciality: 'Gynécologue',
+        speciality: 'Dermatologue',
         degree: 'MBBS',
         experience: '3 Ans',
         about: 'Le Dr Malek est fermement engagé à fournir des soins médicaux complets, en se concentrant sur la médecine préventive, le diagnostic précoce et les stratégies de traitement efficaces. Le Dr Malek est fermement engagé à fournir des soins médicaux complets, en se concentrant sur la médecine préventive, le diagnostic précoce et les stratégies de traitement efficaces..',
