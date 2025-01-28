@@ -23,12 +23,14 @@ import RevenuesPage from "./pages/admin/RevenuesPage.jsx";
 const App = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar/>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/patient" element={<Home />} />
         <Route path="/doctors" element={<Doctors />} />
         <Route path="/doctors/:speciality" element={<Doctors />} />
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/my-profile" element={<MyProfile />} />
