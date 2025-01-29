@@ -5,7 +5,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Admin from "./pages/admin/Admin";
 import DoctorsManagement from "./pages/admin/DoctorsManagement";
 import Analytics from "./pages/admin/Analytics";
-import AddDoctor from "./pages/admin/addDoctor";
+import AddDoctor from "./pages/admin/AddDoctor";
 
 import { Doctors } from "./pages/Doctors";
 import { Login } from "./pages/Login";
